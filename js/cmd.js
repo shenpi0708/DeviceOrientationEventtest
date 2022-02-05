@@ -40,7 +40,6 @@ if (permissionState == 'granted') {
         a.innerHTML = Math.round(alpha);
         b.innerHTML = Math.round(beta);
         g.innerHTML = Math.round(gamma);
-        alert(a);
             }, false);
 }
 }
