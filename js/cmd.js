@@ -40,7 +40,7 @@ window.addEventListener('deviceorientation', function(event) {
 if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
 DeviceOrientationEvent.requestPermission()
 .then(permissionState => {
-alert(permissionState);    
+(permissionState);    
 if (permissionState == 'granted') {
     
     window.addEventListener('deviceorientation', function(event) {
@@ -61,7 +61,6 @@ if (permissionState == 'granted') {
 )
 .catch(console.error);
 } else {
-alert('not ios');     
 window.addEventListener('deviceorientation', function(event) {
     var a = document.getElementById('alpha')
             b = document.getElementById('beta')
