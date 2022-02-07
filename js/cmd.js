@@ -1,3 +1,5 @@
+
+funtion click(){
 if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
 DeviceOrientationEvent.requestPermission()
 .then(permissionState => {
@@ -22,6 +24,7 @@ if (permissionState == 'granted') {
 )
 .catch(console.error);
 } else {
+alert(not ios);
 window.addEventListener('deviceorientation', function(event) {
     var a = document.getElementById('alpha')
             b = document.getElementById('beta')
@@ -34,4 +37,5 @@ window.addEventListener('deviceorientation', function(event) {
     b.innerHTML = Math.round(beta);
     g.innerHTML = Math.round(gamma);
         }, false);
+}
 }
