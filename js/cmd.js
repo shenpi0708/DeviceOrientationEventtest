@@ -1,3 +1,4 @@
+funtion clickk(){
 if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
 DeviceOrientationEvent.requestPermission()
 .then(permissionState => {
@@ -35,8 +36,6 @@ window.addEventListener('deviceorientation', function(event) {
     b.innerHTML = Math.round(beta);
     g.innerHTML = Math.round(gamma);
         }, false);
-}
+}}
 clickk()
-funtion clickk(){
-clickk()
-}
+
