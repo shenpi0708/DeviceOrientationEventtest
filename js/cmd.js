@@ -22,7 +22,7 @@ if (permissionState == 'granted') {
 )
 .catch(console.error);
 } else {
-alert(not ios);
+alert("not ios");
 window.addEventListener('deviceorientation', function(event) {
     var a = document.getElementById('alpha')
             b = document.getElementById('beta')
