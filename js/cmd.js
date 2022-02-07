@@ -1,4 +1,4 @@
-funtion clickk(){
+function clickk(){
 if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
 DeviceOrientationEvent.requestPermission()
 .then(permissionState => {
